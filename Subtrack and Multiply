@@ -1,0 +1,44 @@
+using System;
+
+namespace Calculator
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            // Да се покаже след F5
+            Console.WriteLine("Console Calculator in C#");
+            Console.WriteLine("by Djemal/2xSasho");
+
+            // Първото число
+            Console.WriteLine("Type a number, and then press Enter");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+
+            // Второто число
+            Console.WriteLine("Type another number, and then press Enter");
+            int num2 = Convert.ToInt32(Console.ReadLine());
+
+            // Опциите  -/*
+            Console.WriteLine("Choose an option from the following list:");
+            Console.WriteLine("s - Subtract(-)");
+            Console.WriteLine("m - Multiply(*)");           
+            Console.Write("Your option? ");
+
+            // Последния резултат
+            switch (Console.ReadLine())
+            {
+            
+                case "s":
+                    Console.WriteLine($"Your result: {num1} - {num2} = " + (num1 - num2));
+                    break;
+                case "m":
+                    Console.WriteLine($"Your result: {num1} * {num2} = " + (num1 * num2));
+                    break;
+               
+            }           
+            Console.Write("Press any key to close the Calculator console app...");
+            Console.ReadKey();
+        }
+    }
+}
