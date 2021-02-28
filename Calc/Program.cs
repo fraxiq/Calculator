@@ -33,6 +33,7 @@ namespace Calc
             {
                 return Divide(num1, num2);
             }
+
             return 0.0;
         }
     }
